@@ -52,6 +52,7 @@ void quickSort(int low , int high){
 	quickSort(low, i-1);
 	quickSort(i+1 , high);
 }
+//
 
 void output(){
 	for(int i = 0 ; i < n ; i++){
