@@ -10,7 +10,7 @@ int a[10]={4,8,1,5,2,3,9,7,6,0};
 int partition(int low , int high){
 	int pivot = a[high];
 	int i = low;
-	for(int j = low ; j < high ; j++){			//注意这里是j = low，不是j = low + 1
+	for(int j = low ; j <= high ; j++){			//注意这里是j = low，不是j = low + 1
 		if(a[j] < pivot){
 			swap(a[j] , a[i]);
 			i++;
